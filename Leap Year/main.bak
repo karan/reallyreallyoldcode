@@ -1,0 +1,35 @@
+// DiaVolo
+
+#include <iostream.h>
+#include <conio.h>
+#include <process.h> //for exit();
+
+void main()
+{
+clrscr();
+
+int choice;
+
+cout<<"\n\n";
+cout<<"##############################\n";
+cout<<"# Welcome to DiaVolo\n";
+cout<<"# The mini-game pack contains 2 games:\n";
+cout<<"# 1. U Guess\n";
+cout<<"# 2. I Guess\n";
+cout<<"##############################\n";
+cout<<"\nEnter 1 or 2 to play the game, or 3 to exit.";
+cout<<"\nYour choice: ";
+	cin>>choice;
+
+switch(choice)
+{
+	case 1: //uguess();  //Call U Guess
+				break;
+	case 2: //iguess();  //Call I Guess
+				break;
+	case 3: exit(0);   //Exit game
+	default: cout<<"Enter the correct choice... "; //For invalid input
+}
+
+getch();
+}
